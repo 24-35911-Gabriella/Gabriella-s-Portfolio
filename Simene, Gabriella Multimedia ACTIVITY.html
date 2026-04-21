@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gabriella D. Simene - Portfolio</title>
+<style>
+* { margin: 0; padding: 0; }
+body { font-family: Arial; background: #fff; color: #333; }
+
+/* nav */
+.nav { background: #fff; padding: 15px 50px; border-bottom: 1px solid #eee; overflow: hidden; }
+.logo { float: left; }
+.logo b { color: #e91e63; font-size: 18px; }
+.logo small { color: #999; display: block; font-size: 10px; }
+.menu { float: right; margin-top: 10px; }
+.menu a { color: #666; text-decoration: none; margin-left: 20px; font-size: 12px; }
+
+/* hero */
+.hero { text-align: center; padding: 40px; background: #fdf2f8; }
+.hero img { width: 100px; height: 100px; border-radius: 50%; border: 3px solid #e91e63; }
+.hero h1 { font-size: 30px; margin: 15px 0; }
+.hero p { color: #666; font-size: 14px; }
+.hero span { color: #9c27b0; font-weight: bold; }
+.hero button { background: #e91e63; color: #fff; border: none; padding: 10px 25px; border-radius: 20px; margin-top: 15px; cursor: pointer; }
+
+/* about */
+.about { padding: 40px 50px; text-align: center; }
+.about h2 { font-size: 24px; margin-bottom: 30px; }
+.box { display: inline-block; width: 28%; background: #fff; padding: 20px; margin: 0 1%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: left; vertical-align: top; }
+.box .icon { width: 35px; height: 35px; background: linear-gradient(135deg, #e91e63, #9c27b0); border-radius: 8px; color: #fff; text-align: center; line-height: 35px; margin-bottom: 10px; }
+.box h3 { font-size: 16px; margin-bottom: 5px; }
+.box p { color: #666; font-size: 12px; }
+
+/* talents */
+.talents { padding: 40px 50px; background: #fff; text-align: center; }
+.talents h2 { font-size: 24px; margin-bottom: 10px; }
+.talents > p { color: #666; font-size: 12px; margin-bottom: 30px; }
+.talent-row { overflow: hidden; margin-bottom: 20px; }
+.talent { float: left; width: 45%; text-align: left; margin: 0 2.5%; }
+.talent .icon { width: 30px; height: 30px; border-radius: 6px; text-align: center; line-height: 30px; float: left; margin-right: 10px; }
+.blue { background: #e3f2fd; } .orange { background: #fff3e0; } .green { background: #e8f5e9; } .purple { background: #f3e5f5; }
+.talent h4 { font-size: 14px; margin-bottom: 3px; }
+.talent p { color: #666; font-size: 11px; }
+
+/* projects */
+.projects { padding: 40px 50px; background: #f8f9fa; text-align: center; }
+.projects h2 { font-size: 24px; margin-bottom: 10px; }
+.projects > p { color: #666; font-size: 12px; margin-bottom: 30px; }
+.proj { display: inline-block; width: 30%; background: #fff; padding: 15px; margin: 0 1%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: left; vertical-align: top; }
+.proj .tag { background: #fce4ec; color: #e91e63; padding: 2px 8px; border-radius: 10px; font-size: 10px; display: inline-block; margin-bottom: 8px; }
+.proj h3 { font-size: 14px; margin-bottom: 8px; }
+.proj p { color: #666; font-size: 11px; margin-bottom: 8px; line-height: 1.4; }
+.proj .tags span { background: #f5f5f5; padding: 2px 6px; border-radius: 3px; font-size: 9px; color: #666; }
+.proj button { background: linear-gradient(90deg, #e91e63, #9c27b0); color: #fff; border: none; padding: 5px 15px; border-radius: 15px; font-size: 11px; margin-top: 10px; cursor: pointer; }
+
+/* contact */
+.contact { padding: 40px 50px; background: linear-gradient(135deg, #6a1b9a, #e91e63); color: #fff; text-align: center; }
+.contact h2 { font-size: 24px; margin-bottom: 20px; }
+.contact-box { background: rgba(255,255,255,0.2); max-width: 300px; margin: 0 auto; padding: 20px; border-radius: 10px; text-align: left; }
+.contact-box div { margin-bottom: 12px; overflow: hidden; }
+.contact-box i { width: 30px; height: 30px; background: rgba(255,255,255,0.3); border-radius: 5px; text-align: center; line-height: 30px; float: left; margin-right: 10px; font-style: normal; }
+.contact-box h4 { font-size: 12px; }
+.contact-box p { font-size: 11px; opacity: 0.8; }
+.contact-box button { width: 100%; background: #fff; color: #e91e63; border: none; padding: 8px; border-radius: 15px; font-weight: bold; cursor: pointer; margin-top: 5px; }
+
+/* footer */
+footer { text-align: center; padding: 15px; background: #6a1b9a; color: #fff; font-size: 12px; }
+</style>
+</head>
+<body>
+
+<div class="nav">
+<div class="logo"><b>CS</b><small>Creative Studios</small></div>
+<div class="menu">
+<a href="#about">Skills</a>
+<a href="#talents">Talents</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Professional Information</a>
+</div>
+</div>
+
+<div class="hero">
+<img src="profile.jpg" alt="Gabriella">
+<h1>Gabriella D. Simene</h1>
+<p>Hi! I'm Gabriella D. Simene, a Student Pursuing the course of</p>
+<p><span>Bachelor in Computer Engineering Technology</span></p>
+<button>View My Projects →</button>
+</div>
+
+<div class="about" id="about">
+<h2>About Me</h2>
+<div class="box">
+<div class="icon">&lt;/&gt;</div>
+<h3>Programming</h3>
+<p>Building robust applications with modern languages</p>
+</div>
+<div class="box">
+<div class="icon">&gt;_</div>
+<h3>Coding</h3>
+<p>Writing clean, efficient, and maintainable code</p>
+</div>
+<div class="box">
+<div class="icon">⚙</div>
+<h3>Networking</h3>
+<p>Understanding network protocols and infrastructure</p>
+</div>
+</div>
+
+<div class="talents" id="talents">
+<h2>Talents & Strengths</h2>
+<p>Key strengths that drive my success as a Computer Engineering student</p>
+<div class="talent-row">
+<div class="talent">
+<div class="icon blue">💡</div>
+<h4>Problem Solving</h4>
+<p>Analytical thinking to tackle complex engineering challenges</p>
+</div>
+<div class="talent">
+<div class="icon orange">💡</div>
+<h4>Innovation</h4>
+<p>Creative approaches to modern technology solutions</p>
+</div>
+</div>
+<div class="talent-row">
+<div class="talent">
+<div class="icon green">👥</div>
+<h4>Collaboration</h4>
+<p>Effective teamwork and communication skills</p>
+</div>
+<div class="talent">
+<div class="icon purple">⚡</div>
+<h4>Quick Learning</h4>
+<p>Rapidly adapting to new technologies and frameworks</p>
+</div>
+</div>
+</div>
+
+<div class="projects" id="projects">
+<h2>My Projects</h2>
+<p>Explore some of the projects I've worked on during my studies</p>
+<div class="proj">
+<span class="tag">Networking</span>
+<h3>Network Infrastructure Project</h3>
+<p>Designed and implemented a secure network infrastructure for campus connectivity.</p>
+<div class="tags">
+<span>Network Design</span>
+<span>Security</span>
+<span>Infrastructure</span>
+</div>
+<button>👁 View</button>
+</div>
+<div class="proj">
+<span class="tag">Programming</span>
+<h3>Web Application Development</h3>
+<p>Built a full-stack web application using modern frameworks and technologies.</p>
+<div class="tags">
+<span>React</span>
+<span>Node.js</span>
+<span>Database</span>
+</div>
+<button>👁 View</button>
+</div>
+<div class="proj">
+<span class="tag">Engineering</span>
+<h3>Embedded Systems Project</h3>
+<p>Developed embedded system solutions for IoT applications.</p>
+<div class="tags">
+<span>IoT</span>
+<span>Microcontrollers</span>
+<span>C++</span>
+</div>
+<button>👁 View</button>
+</div>
+</div>
+
+<div class="contact" id="contact">
+<h2>Contact Me</h2>
+<div class="contact-box">
+<div>
+<i>✉</i>
+<div style="float:left;">
+<h4>Email</h4>
+<p>gabriellasimene@gmail.com</p>
+</div>
+<div style="clear:both;"></div>
+</div>
+<div>
+<i>f</i>
+<div style="float:left;">
+<h4>Facebook</h4>
+<p>Gabriella Simene</p>
+</div>
+<div style="clear:both;"></div>
+</div>
+<button>Send a Message ✈</button>
+</div>
+</div>
+
+<footer>
+<p>© Gabriella D. Simene. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
